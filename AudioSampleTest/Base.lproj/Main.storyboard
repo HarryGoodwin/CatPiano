@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioSampleTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9s-1X-lFa" customClass="PianoView" customModule="AudioSampleTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catTest" translatesAutoresizingMaskIntoConstraints="NO" id="3k4-ey-o6B">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M9s-1X-lFa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0dg-YA-irx"/>
+                            <constraint firstAttribute="trailing" secondItem="3k4-ey-o6B" secondAttribute="trailing" id="2DA-N7-kNl"/>
+                            <constraint firstItem="M9s-1X-lFa" firstAttribute="top" secondItem="3k4-ey-o6B" secondAttribute="bottom" id="8rb-ct-IqR"/>
+                            <constraint firstItem="3k4-ey-o6B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="F0k-Nk-FUx"/>
+                            <constraint firstAttribute="trailing" secondItem="M9s-1X-lFa" secondAttribute="trailing" id="Uqj-C5-cVG"/>
+                            <constraint firstItem="3k4-ey-o6B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="X1n-Yr-vog"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M9s-1X-lFa" secondAttribute="bottom" id="a6b-BW-Uhf"/>
+                            <constraint firstItem="M9s-1X-lFa" firstAttribute="top" secondItem="3k4-ey-o6B" secondAttribute="bottom" id="rlY-pB-3PA"/>
+                            <constraint firstItem="M9s-1X-lFa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="s7e-JE-Y1l"/>
+                            <constraint firstItem="M9s-1X-lFa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="uXB-4L-FF5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="s7e-JE-Y1l"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="pianoView" destination="M9s-1X-lFa" id="sR2-WP-h37"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="539" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="catTest" width="303" height="234"/>
+    </resources>
+</document>
