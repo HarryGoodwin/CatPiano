@@ -26,8 +26,9 @@
                                         <constraint firstAttribute="width" constant="2" id="aKF-GN-1dO"/>
                                     </constraints>
                                 </view>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdj-L0-3o8">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdj-L0-3o8">
                                     <rect key="frame" x="0.0" y="0.0" width="82" height="590"/>
+                                    <state key="highlighted" image="WhiteKeyShadow"/>
                                     <connections>
                                         <action selector="keyCPressed:" destination="iN0-l3-epB" eventType="touchDown" id="8Hr-Tv-SCd"/>
                                     </connections>
@@ -47,8 +48,9 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKd-kJ-tTI">
                             <rect key="frame" x="84" y="0.0" width="85" height="590"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6e-V3-Qa7">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6e-V3-Qa7">
                                     <rect key="frame" x="0.0" y="0.0" width="83" height="590"/>
+                                    <state key="highlighted" image="WhiteKeyShadow"/>
                                     <connections>
                                         <action selector="keyDPressed:" destination="iN0-l3-epB" eventType="touchDown" id="6ku-0g-TWC"/>
                                     </connections>
@@ -63,8 +65,9 @@
                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Da0-MD-Mrz">
                                     <rect key="frame" x="-24" y="0.0" width="50" height="354"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NV8-1B-du8">
-                                            <rect key="frame" x="0.0" y="0.0" width="51" height="354"/>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NV8-1B-du8">
+                                            <rect key="frame" x="1" y="0.0" width="50" height="354"/>
+                                            <state key="highlighted" image="WhiteKeyShadow"/>
                                             <connections>
                                                 <action selector="keyCsPressed:" destination="iN0-l3-epB" eventType="touchDown" id="suv-sX-i5G"/>
                                             </connections>
@@ -97,8 +100,9 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPF-YW-gbg">
                             <rect key="frame" x="169" y="0.0" width="84" height="590"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFU-21-N6q">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFU-21-N6q">
                                     <rect key="frame" x="0.0" y="0.0" width="82" height="590"/>
+                                    <state key="highlighted" image="WhiteKeyShadow"/>
                                     <connections>
                                         <action selector="keyEPressed:" destination="iN0-l3-epB" eventType="touchDown" id="ZWg-4a-lj6"/>
                                     </connections>
@@ -113,8 +117,9 @@
                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jf2-r9-bf2">
                                     <rect key="frame" x="-26" y="0.0" width="51" height="354"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZK-Rd-aBV">
-                                            <rect key="frame" x="0.0" y="0.0" width="52" height="354"/>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZK-Rd-aBV">
+                                            <rect key="frame" x="0.0" y="0.0" width="51" height="354"/>
+                                            <state key="highlighted" image="WhiteKeyShadow"/>
                                             <connections>
                                                 <action selector="keyDsPressed:" destination="iN0-l3-epB" eventType="touchDown" id="Tf3-iY-8OF"/>
                                             </connections>
@@ -154,8 +159,9 @@
                                         <constraint firstAttribute="width" constant="2" id="eIp-wZ-O8V"/>
                                     </constraints>
                                 </view>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ack-W2-jsU">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ack-W2-jsU">
                                     <rect key="frame" x="0.0" y="0.0" width="82" height="590"/>
+                                    <state key="highlighted" image="WhiteKeyShadow"/>
                                     <connections>
                                         <action selector="keyFPressed:" destination="iN0-l3-epB" eventType="touchDown" id="fw3-h8-xQK"/>
                                     </connections>
@@ -175,8 +181,9 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PxW-Oe-5XJ">
                             <rect key="frame" x="337" y="0.0" width="84" height="590"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSi-pI-aoD">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSi-pI-aoD">
                                     <rect key="frame" x="0.0" y="0.0" width="82" height="590"/>
+                                    <state key="highlighted" image="WhiteKeyShadow"/>
                                     <connections>
                                         <action selector="keyGPressed:" destination="iN0-l3-epB" eventType="touchDown" id="JO5-uD-QAc"/>
                                     </connections>
@@ -191,8 +198,9 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bad-TF-rwS">
                                     <rect key="frame" x="-25" y="0.0" width="51" height="354"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydl-AL-LCI">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydl-AL-LCI">
                                             <rect key="frame" x="0.0" y="0.0" width="51" height="354"/>
+                                            <state key="highlighted" image="WhiteKeyShadow"/>
                                             <connections>
                                                 <action selector="keyFsPressed:" destination="iN0-l3-epB" eventType="touchDown" id="5ZY-eI-JD4"/>
                                             </connections>
@@ -225,8 +233,9 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJi-lf-bxU">
                             <rect key="frame" x="421" y="0.0" width="85" height="590"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Luo-wS-nF5">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Luo-wS-nF5">
                                     <rect key="frame" x="0.0" y="0.0" width="83" height="590"/>
+                                    <state key="highlighted" image="WhiteKeyShadow"/>
                                     <connections>
                                         <action selector="keyAPressed:" destination="iN0-l3-epB" eventType="touchDown" id="Um7-tR-YaM"/>
                                     </connections>
@@ -241,8 +250,9 @@
                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jw2-ex-NWC">
                                     <rect key="frame" x="-25" y="0.0" width="51" height="354"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ed-2X-kGe">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="354"/>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ed-2X-kGe">
+                                            <rect key="frame" x="0.0" y="0.0" width="51" height="354"/>
+                                            <state key="highlighted" image="WhiteKeyShadow"/>
                                             <connections>
                                                 <action selector="keyGsPressed:" destination="iN0-l3-epB" eventType="touchDown" id="nJW-xw-Hmx"/>
                                             </connections>
@@ -275,8 +285,9 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Da-xF-OgJ">
                             <rect key="frame" x="506" y="0.0" width="84" height="590"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25U-iO-r9e">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25U-iO-r9e">
                                     <rect key="frame" x="0.0" y="0.0" width="82" height="590"/>
+                                    <state key="highlighted" image="WhiteKeyShadow"/>
                                     <connections>
                                         <action selector="keyBPressed:" destination="iN0-l3-epB" eventType="touchDown" id="Jih-Zf-SI4"/>
                                     </connections>
@@ -291,8 +302,9 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPH-GX-jJY">
                                     <rect key="frame" x="-26" y="0.0" width="51" height="354"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVb-nh-PoY">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVb-nh-PoY">
                                             <rect key="frame" x="0.0" y="0.0" width="51" height="354"/>
+                                            <state key="highlighted" image="WhiteKeyShadow"/>
                                             <connections>
                                                 <action selector="keyAsPressed:" destination="iN0-l3-epB" eventType="touchDown" id="lbg-C1-2wd"/>
                                             </connections>
@@ -334,4 +346,7 @@
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="WhiteKeyShadow" width="107" height="403"/>
+    </resources>
 </document>
