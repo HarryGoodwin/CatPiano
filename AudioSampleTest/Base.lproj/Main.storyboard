@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,32 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9s-1X-lFa" customClass="PianoView" customModule="AudioSampleTest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catTest" translatesAutoresizingMaskIntoConstraints="NO" id="3k4-ey-o6B">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wvu-ZP-ym7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catTest" translatesAutoresizingMaskIntoConstraints="NO" id="3k4-ey-o6B">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9s-1X-lFa" customClass="PianoView" customModule="AudioSampleTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="M9s-1X-lFa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0dg-YA-irx"/>
-                            <constraint firstAttribute="trailing" secondItem="3k4-ey-o6B" secondAttribute="trailing" id="2DA-N7-kNl"/>
-                            <constraint firstItem="M9s-1X-lFa" firstAttribute="top" secondItem="3k4-ey-o6B" secondAttribute="bottom" id="8rb-ct-IqR"/>
-                            <constraint firstItem="3k4-ey-o6B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="F0k-Nk-FUx"/>
-                            <constraint firstAttribute="trailing" secondItem="M9s-1X-lFa" secondAttribute="trailing" id="Uqj-C5-cVG"/>
-                            <constraint firstItem="3k4-ey-o6B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="X1n-Yr-vog"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M9s-1X-lFa" secondAttribute="bottom" id="a6b-BW-Uhf"/>
-                            <constraint firstItem="M9s-1X-lFa" firstAttribute="top" secondItem="3k4-ey-o6B" secondAttribute="bottom" id="rlY-pB-3PA"/>
-                            <constraint firstItem="M9s-1X-lFa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="s7e-JE-Y1l"/>
-                            <constraint firstItem="M9s-1X-lFa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="uXB-4L-FF5"/>
+                            <constraint firstAttribute="trailing" secondItem="Wvu-ZP-ym7" secondAttribute="trailing" id="Sm7-Eg-mHb"/>
+                            <constraint firstItem="Wvu-ZP-ym7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gqz-ez-DgN"/>
+                            <constraint firstItem="Wvu-ZP-ym7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="qLF-nD-4XO"/>
+                            <constraint firstAttribute="bottom" secondItem="Wvu-ZP-ym7" secondAttribute="bottom" id="r3D-Y8-yc8"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="s7e-JE-Y1l"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="pianoView" destination="M9s-1X-lFa" id="sR2-WP-h37"/>
