@@ -11,6 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
+	@IBOutlet weak var bassPianoView: PianoView!
     @IBOutlet weak var pianoView: PianoView!
     
     let notePlayer = NotePlayer()
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         loadPianoView()
         notePlayer.initialiseAudioPLayers()
+		
+		NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.rotated), name: UIDeviceOrientationDidChangeNotification, object: nil)
     }
     
     func loadPianoView(){
@@ -27,7 +30,19 @@ class ViewController: UIViewController {
         xibView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         pianoView.addSubview(xibView)
         xibView.delegate = self
+		
+		let xibView2 = NSBundle.mainBundle().loadNibNamed("PianoView", owner: self, options: nil)[0] as! PianoView
+		xibView2.frame = bassPianoView.bounds
+		xibView2.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+		bassPianoView.addSubview(xibView2)
+		xibView2.delegate = self
     }
+	
+	func rotated(){
+		UIView.animateWithDuration(0.5, animations: {
+			self.bassPianoView.hidden = UIDeviceOrientationIsPortrait(UIDevice.currentDevice().orientation)
+		})
+	}
 }
 
 extension ViewController: PianoViewDelegate{
