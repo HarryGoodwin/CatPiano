@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -29,7 +29,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdj-L0-3o8">
                                     <rect key="frame" x="0.0" y="0.0" width="82" height="590"/>
                                     <connections>
-                                        <action selector="keyCPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="iS3-fH-H9Y"/>
+                                        <action selector="keyCPressed:" destination="iN0-l3-epB" eventType="touchDown" id="8Hr-Tv-SCd"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -50,7 +50,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6e-V3-Qa7">
                                     <rect key="frame" x="0.0" y="0.0" width="83" height="590"/>
                                     <connections>
-                                        <action selector="keyDPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="I0k-hJ-ahe"/>
+                                        <action selector="keyDPressed:" destination="iN0-l3-epB" eventType="touchDown" id="6ku-0g-TWC"/>
                                     </connections>
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byj-sM-29K">
@@ -66,7 +66,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NV8-1B-du8">
                                             <rect key="frame" x="0.0" y="0.0" width="51" height="354"/>
                                             <connections>
-                                                <action selector="keyCsPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Koh-Z3-niD"/>
+                                                <action selector="keyCsPressed:" destination="iN0-l3-epB" eventType="touchDown" id="suv-sX-i5G"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -100,7 +100,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFU-21-N6q">
                                     <rect key="frame" x="0.0" y="0.0" width="82" height="590"/>
                                     <connections>
-                                        <action selector="keyEPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="rVt-hN-J4Y"/>
+                                        <action selector="keyEPressed:" destination="iN0-l3-epB" eventType="touchDown" id="ZWg-4a-lj6"/>
                                     </connections>
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZT-fz-vX9">
@@ -116,7 +116,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZK-Rd-aBV">
                                             <rect key="frame" x="0.0" y="0.0" width="52" height="354"/>
                                             <connections>
-                                                <action selector="keyDsPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="dcF-w0-xDP"/>
+                                                <action selector="keyDsPressed:" destination="iN0-l3-epB" eventType="touchDown" id="Tf3-iY-8OF"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -157,7 +157,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ack-W2-jsU">
                                     <rect key="frame" x="0.0" y="0.0" width="82" height="590"/>
                                     <connections>
-                                        <action selector="keyFPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="uha-rS-HDC"/>
+                                        <action selector="keyFPressed:" destination="iN0-l3-epB" eventType="touchDown" id="fw3-h8-xQK"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -178,7 +178,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSi-pI-aoD">
                                     <rect key="frame" x="0.0" y="0.0" width="82" height="590"/>
                                     <connections>
-                                        <action selector="keyGPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="AJU-hd-ApD"/>
+                                        <action selector="keyGPressed:" destination="iN0-l3-epB" eventType="touchDown" id="JO5-uD-QAc"/>
                                     </connections>
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thH-ag-fJp">
@@ -194,7 +194,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydl-AL-LCI">
                                             <rect key="frame" x="0.0" y="0.0" width="51" height="354"/>
                                             <connections>
-                                                <action selector="keyFsPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="wlc-r7-57p"/>
+                                                <action selector="keyFsPressed:" destination="iN0-l3-epB" eventType="touchDown" id="5ZY-eI-JD4"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -228,7 +228,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Luo-wS-nF5">
                                     <rect key="frame" x="0.0" y="0.0" width="83" height="590"/>
                                     <connections>
-                                        <action selector="keyAPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="C0l-vq-aMt"/>
+                                        <action selector="keyAPressed:" destination="iN0-l3-epB" eventType="touchDown" id="Um7-tR-YaM"/>
                                     </connections>
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQU-MV-zqy">
@@ -244,7 +244,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ed-2X-kGe">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="354"/>
                                             <connections>
-                                                <action selector="keyGsPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="tDN-lS-fvz"/>
+                                                <action selector="keyGsPressed:" destination="iN0-l3-epB" eventType="touchDown" id="nJW-xw-Hmx"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -278,7 +278,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25U-iO-r9e">
                                     <rect key="frame" x="0.0" y="0.0" width="82" height="590"/>
                                     <connections>
-                                        <action selector="keyBPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ge1-s2-2pq"/>
+                                        <action selector="keyBPressed:" destination="iN0-l3-epB" eventType="touchDown" id="Jih-Zf-SI4"/>
                                     </connections>
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUq-Xi-GqJ">
@@ -294,7 +294,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVb-nh-PoY">
                                             <rect key="frame" x="0.0" y="0.0" width="51" height="354"/>
                                             <connections>
-                                                <action selector="keyAsPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="kg2-2N-eYv"/>
+                                                <action selector="keyAsPressed:" destination="iN0-l3-epB" eventType="touchDown" id="lbg-C1-2wd"/>
                                             </connections>
                                         </button>
                                     </subviews>

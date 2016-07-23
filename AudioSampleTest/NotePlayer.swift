@@ -15,7 +15,7 @@ class NotePlayer: NSObject {
 
     func initialiseAudioPLayers(){
         Notes.all().forEach({(note: String) in
-            if let noteFilePath = NSBundle.mainBundle().pathForResource("piano-normal-d4", ofType: "wav"){
+            if let noteFilePath = NSBundle.mainBundle().pathForResource("Medium_Meow_\(note)", ofType: "mp3"){
                 let noteURL = NSURL(fileURLWithPath: noteFilePath)
                 do {
                     let ap = try AVAudioPlayer.init(contentsOfURL: noteURL)

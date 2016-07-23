@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AE9268A1D42F48000098FBE /* Medium_Meow_A#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9267F1D42F48000098FBE /* Medium_Meow_A#.mp3 */; };
+		4AE9268B1D42F48000098FBE /* Medium_Meow_B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926801D42F48000098FBE /* Medium_Meow_B.mp3 */; };
+		4AE9268C1D42F48000098FBE /* Medium_Meow_C.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926811D42F48000098FBE /* Medium_Meow_C.mp3 */; };
+		4AE9268D1D42F48000098FBE /* Medium_Meow_C#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926821D42F48000098FBE /* Medium_Meow_C#.mp3 */; };
+		4AE9268E1D42F48000098FBE /* Medium_Meow_D.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926831D42F48000098FBE /* Medium_Meow_D.mp3 */; };
+		4AE9268F1D42F48000098FBE /* Medium_Meow_D#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926841D42F48000098FBE /* Medium_Meow_D#.mp3 */; };
+		4AE926901D42F48000098FBE /* Medium_Meow_E.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926851D42F48000098FBE /* Medium_Meow_E.mp3 */; };
+		4AE926911D42F48000098FBE /* Medium_Meow_F.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926861D42F48000098FBE /* Medium_Meow_F.mp3 */; };
+		4AE926921D42F48000098FBE /* Medium_Meow_F#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926871D42F48000098FBE /* Medium_Meow_F#.mp3 */; };
+		4AE926931D42F48000098FBE /* Medium_Meow_G.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926881D42F48000098FBE /* Medium_Meow_G.mp3 */; };
+		4AE926941D42F48000098FBE /* Medium_Meow_G#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926891D42F48000098FBE /* Medium_Meow_G#.mp3 */; };
+		4AE926961D42F4DB00098FBE /* Medium_Meow_A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926951D42F4DB00098FBE /* Medium_Meow_A.mp3 */; };
 		673CDAF31D3DD7A900561C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673CDAF21D3DD7A900561C77 /* AppDelegate.swift */; };
 		673CDAF51D3DD7A900561C77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673CDAF41D3DD7A900561C77 /* ViewController.swift */; };
 		673CDAF81D3DD7A900561C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673CDAF61D3DD7A900561C77 /* Main.storyboard */; };
@@ -21,6 +33,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AE9267F1D42F48000098FBE /* Medium_Meow_A#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Medium_Meow_A#.mp3"; path = "Cat_Meows/Medium_Meow_A#.mp3"; sourceTree = "<group>"; };
+		4AE926801D42F48000098FBE /* Medium_Meow_B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Medium_Meow_B.mp3; path = Cat_Meows/Medium_Meow_B.mp3; sourceTree = "<group>"; };
+		4AE926811D42F48000098FBE /* Medium_Meow_C.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Medium_Meow_C.mp3; path = Cat_Meows/Medium_Meow_C.mp3; sourceTree = "<group>"; };
+		4AE926821D42F48000098FBE /* Medium_Meow_C#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Medium_Meow_C#.mp3"; path = "Cat_Meows/Medium_Meow_C#.mp3"; sourceTree = "<group>"; };
+		4AE926831D42F48000098FBE /* Medium_Meow_D.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Medium_Meow_D.mp3; path = Cat_Meows/Medium_Meow_D.mp3; sourceTree = "<group>"; };
+		4AE926841D42F48000098FBE /* Medium_Meow_D#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Medium_Meow_D#.mp3"; path = "Cat_Meows/Medium_Meow_D#.mp3"; sourceTree = "<group>"; };
+		4AE926851D42F48000098FBE /* Medium_Meow_E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Medium_Meow_E.mp3; path = Cat_Meows/Medium_Meow_E.mp3; sourceTree = "<group>"; };
+		4AE926861D42F48000098FBE /* Medium_Meow_F.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Medium_Meow_F.mp3; path = Cat_Meows/Medium_Meow_F.mp3; sourceTree = "<group>"; };
+		4AE926871D42F48000098FBE /* Medium_Meow_F#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Medium_Meow_F#.mp3"; path = "Cat_Meows/Medium_Meow_F#.mp3"; sourceTree = "<group>"; };
+		4AE926881D42F48000098FBE /* Medium_Meow_G.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Medium_Meow_G.mp3; path = Cat_Meows/Medium_Meow_G.mp3; sourceTree = "<group>"; };
+		4AE926891D42F48000098FBE /* Medium_Meow_G#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Medium_Meow_G#.mp3"; path = "Cat_Meows/Medium_Meow_G#.mp3"; sourceTree = "<group>"; };
+		4AE926951D42F4DB00098FBE /* Medium_Meow_A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Medium_Meow_A.mp3; sourceTree = "<group>"; };
 		673CDAEF1D3DD7A800561C77 /* AudioSampleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioSampleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		673CDAF21D3DD7A900561C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		673CDAF41D3DD7A900561C77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +93,18 @@
 			isa = PBXGroup;
 			children = (
 				673CDB061D3DD7EF00561C77 /* piano-normal-d4.wav */,
+				4AE926951D42F4DB00098FBE /* Medium_Meow_A.mp3 */,
+				4AE9267F1D42F48000098FBE /* Medium_Meow_A#.mp3 */,
+				4AE926801D42F48000098FBE /* Medium_Meow_B.mp3 */,
+				4AE926811D42F48000098FBE /* Medium_Meow_C.mp3 */,
+				4AE926821D42F48000098FBE /* Medium_Meow_C#.mp3 */,
+				4AE926831D42F48000098FBE /* Medium_Meow_D.mp3 */,
+				4AE926841D42F48000098FBE /* Medium_Meow_D#.mp3 */,
+				4AE926851D42F48000098FBE /* Medium_Meow_E.mp3 */,
+				4AE926861D42F48000098FBE /* Medium_Meow_F.mp3 */,
+				4AE926871D42F48000098FBE /* Medium_Meow_F#.mp3 */,
+				4AE926881D42F48000098FBE /* Medium_Meow_G.mp3 */,
+				4AE926891D42F48000098FBE /* Medium_Meow_G#.mp3 */,
 				673CDAF21D3DD7A900561C77 /* AppDelegate.swift */,
 				673CDAF41D3DD7A900561C77 /* ViewController.swift */,
 				673CDAF61D3DD7A900561C77 /* Main.storyboard */,
@@ -141,11 +177,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE9268B1D42F48000098FBE /* Medium_Meow_B.mp3 in Resources */,
+				4AE926961D42F4DB00098FBE /* Medium_Meow_A.mp3 in Resources */,
 				673CDAFD1D3DD7A900561C77 /* LaunchScreen.storyboard in Resources */,
 				673CDB091D3DDDCA00561C77 /* PianoView.xib in Resources */,
+				4AE9268D1D42F48000098FBE /* Medium_Meow_C#.mp3 in Resources */,
 				673CDB071D3DD7EF00561C77 /* piano-normal-d4.wav in Resources */,
+				4AE9268C1D42F48000098FBE /* Medium_Meow_C.mp3 in Resources */,
+				4AE9268F1D42F48000098FBE /* Medium_Meow_D#.mp3 in Resources */,
 				673CDAFA1D3DD7A900561C77 /* Assets.xcassets in Resources */,
+				4AE926921D42F48000098FBE /* Medium_Meow_F#.mp3 in Resources */,
+				4AE926941D42F48000098FBE /* Medium_Meow_G#.mp3 in Resources */,
 				673CDAF81D3DD7A900561C77 /* Main.storyboard in Resources */,
+				4AE9268E1D42F48000098FBE /* Medium_Meow_D.mp3 in Resources */,
+				4AE926911D42F48000098FBE /* Medium_Meow_F.mp3 in Resources */,
+				4AE926901D42F48000098FBE /* Medium_Meow_E.mp3 in Resources */,
+				4AE926931D42F48000098FBE /* Medium_Meow_G.mp3 in Resources */,
+				4AE9268A1D42F48000098FBE /* Medium_Meow_A#.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +360,7 @@
 				673CDB031D3DD7A900561C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
