@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AACA7E51D4E0D7E0056ADAF /* CatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AACA7E41D4E0D7E0056ADAF /* CatsView.swift */; };
 		4AE9268A1D42F48000098FBE /* Medium_Meow_A#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9267F1D42F48000098FBE /* Medium_Meow_A#.mp3 */; };
 		4AE9268B1D42F48000098FBE /* Medium_Meow_B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926801D42F48000098FBE /* Medium_Meow_B.mp3 */; };
 		4AE9268C1D42F48000098FBE /* Medium_Meow_C.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926811D42F48000098FBE /* Medium_Meow_C.mp3 */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AACA7E41D4E0D7E0056ADAF /* CatsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsView.swift; sourceTree = "<group>"; };
 		4AE9267F1D42F48000098FBE /* Medium_Meow_A#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Medium_Meow_A#.mp3"; path = "Cat_Meows/Medium_Meow_A#.mp3"; sourceTree = "<group>"; };
 		4AE926801D42F48000098FBE /* Medium_Meow_B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Medium_Meow_B.mp3; path = Cat_Meows/Medium_Meow_B.mp3; sourceTree = "<group>"; };
 		4AE926811D42F48000098FBE /* Medium_Meow_C.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Medium_Meow_C.mp3; path = Cat_Meows/Medium_Meow_C.mp3; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				673CDB0A1D3EF38900561C77 /* PianoView.swift */,
 				673CDB0C1D41F62200561C77 /* NotePlayer.swift */,
 				673CDB0E1D41FBEE00561C77 /* Notes.swift */,
+				4AACA7E41D4E0D7E0056ADAF /* CatsView.swift */,
 			);
 			path = AudioSampleTest;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				673CDAF51D3DD7A900561C77 /* ViewController.swift in Sources */,
 				673CDB0F1D41FBEE00561C77 /* Notes.swift in Sources */,
 				673CDB0B1D3EF38900561C77 /* PianoView.swift in Sources */,
+				4AACA7E51D4E0D7E0056ADAF /* CatsView.swift in Sources */,
 				673CDB0D1D41F62200561C77 /* NotePlayer.swift in Sources */,
 				673CDAF31D3DD7A900561C77 /* AppDelegate.swift in Sources */,
 			);

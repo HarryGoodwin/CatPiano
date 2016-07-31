@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,38 +19,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wvu-ZP-ym7">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7l-tq-nZg" customClass="CatsView" customModule="AudioSampleTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catTest" translatesAutoresizingMaskIntoConstraints="NO" id="3k4-ey-o6B">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nebula-Galaxies" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-7y-qUK">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="o9g-yU-lAh">
-                                        <rect key="frame" x="0.0" y="300" width="600" height="300"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KfU-ST-PZb" customClass="PianoView" customModule="AudioSampleTest" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M9s-1X-lFa" customClass="PianoView" customModule="AudioSampleTest" customModuleProvider="target">
-                                                <rect key="frame" x="300" y="0.0" width="300" height="300"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.25490196079999999" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="aYL-7y-qUK" firstAttribute="leading" secondItem="y7l-tq-nZg" secondAttribute="leading" id="3Jg-ZF-fOf"/>
+                                    <constraint firstItem="aYL-7y-qUK" firstAttribute="top" secondItem="y7l-tq-nZg" secondAttribute="top" id="Wws-VB-IOj"/>
+                                    <constraint firstAttribute="trailing" secondItem="aYL-7y-qUK" secondAttribute="trailing" id="rRc-Qs-HYw"/>
+                                    <constraint firstAttribute="bottom" secondItem="aYL-7y-qUK" secondAttribute="bottom" id="w3m-hA-SBd"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="o9g-yU-lAh">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KfU-ST-PZb" customClass="PianoView" customModule="AudioSampleTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9s-1X-lFa" customClass="PianoView" customModule="AudioSampleTest" customModuleProvider="target">
+                                        <rect key="frame" x="300" y="0.0" width="300" height="300"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Wvu-ZP-ym7" secondAttribute="trailing" id="Sm7-Eg-mHb"/>
-                            <constraint firstItem="Wvu-ZP-ym7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gqz-ez-DgN"/>
-                            <constraint firstItem="Wvu-ZP-ym7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="qLF-nD-4XO"/>
-                            <constraint firstAttribute="bottom" secondItem="Wvu-ZP-ym7" secondAttribute="bottom" id="r3D-Y8-yc8"/>
+                            <constraint firstItem="y7l-tq-nZg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Tex-Fo-Dja"/>
+                            <constraint firstAttribute="trailing" secondItem="o9g-yU-lAh" secondAttribute="trailing" id="UUI-sK-FQ6"/>
+                            <constraint firstItem="o9g-yU-lAh" firstAttribute="top" secondItem="y7l-tq-nZg" secondAttribute="bottom" id="VcY-ke-jqz"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="o9g-yU-lAh" secondAttribute="bottom" id="dMZ-Nl-XKP"/>
+                            <constraint firstItem="o9g-yU-lAh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fd7-tB-YDz"/>
+                            <constraint firstItem="y7l-tq-nZg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="uAV-Fl-yKx"/>
+                            <constraint firstItem="y7l-tq-nZg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xJf-YZ-KpY"/>
+                            <constraint firstAttribute="trailing" secondItem="y7l-tq-nZg" secondAttribute="trailing" id="zGu-Cb-8o6"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bassPianoView" destination="KfU-ST-PZb" id="Cjx-u4-8aG"/>
+                        <outlet property="catView" destination="y7l-tq-nZg" id="WVO-dC-MJA"/>
                         <outlet property="pianoView" destination="M9s-1X-lFa" id="sR2-WP-h37"/>
                     </connections>
                 </viewController>
@@ -58,6 +72,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="catTest" width="303" height="234"/>
+        <image name="Nebula-Galaxies" width="960" height="600"/>
     </resources>
 </document>

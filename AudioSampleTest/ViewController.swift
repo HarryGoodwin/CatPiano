@@ -13,12 +13,14 @@ class ViewController: UIViewController {
 
 	@IBOutlet weak var bassPianoView: PianoView!
     @IBOutlet weak var pianoView: PianoView!
+	@IBOutlet weak var catView: CatsView!
     
     let notePlayer = NotePlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadPianoView()
+		catView.addCats()
         notePlayer.initialiseAudioPLayers()
 		
 		NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.rotated), name: UIDeviceOrientationDidChangeNotification, object: nil)
