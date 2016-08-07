@@ -12,6 +12,7 @@ import AVFoundation
 class NotePlayer: NSObject {
 
     var audioNotes:[String : AVAudioPlayer] = [:]
+	var drumPlayer: AVAudioPlayer?
 
     func initialiseAudioPLayers(){
         Notes.all().forEach({(note: String) in
@@ -37,4 +38,32 @@ class NotePlayer: NSObject {
             debugPrint("Playing Note \(note)")
         }
     }
+	
+	func playDrums(){
+		if (drumPlayer == nil){
+			if let noteFilePath = NSBundle.mainBundle().pathForResource("testBeat", ofType: "mp3"){
+				let noteURL = NSURL(fileURLWithPath: noteFilePath)
+				do {
+					drumPlayer = try AVAudioPlayer.init(contentsOfURL: noteURL)
+				}catch{
+					debugPrint("AVAudio error - drumPLayer")
+				}
+			}
+		}
+		
+		drumPlayer?.currentTime = 0
+		drumPlayer?.play()
+	}
+	
+	func stopDrums(){
+		drumPlayer?.stop()
+	}
+	
+	func drumsPlaying() -> Bool{
+		if drumPlayer != nil{
+			return (drumPlayer?.playing)!
+		}
+		
+		return false
+	}
 }

@@ -26,7 +26,6 @@ class CatsView: UIView {
 			addSubview(imageView)
 			
 			xPosition += imageView.frame.size.width
-			debugPrint("Ending loop: x = \(xPosition), frame = \(frame.size.width)")
 		}
 		
 		xPosition = 30
@@ -41,7 +40,6 @@ class CatsView: UIView {
 			addSubview(imageView)
 			
 			xPosition += imageView.frame.size.width
-			debugPrint("Ending loop: x = \(xPosition), frame = \(frame.size.width)")
 		}
 	}
 }
