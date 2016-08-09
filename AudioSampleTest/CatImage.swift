@@ -15,9 +15,9 @@ class CatImage: UIImageView {
 			
 			self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y + 20, width: self.frame.size.width, height: self.frame.size.height)
 			
-			var degrees: CGFloat = CGFloat(arc4random_uniform(20))
-			degrees -= 15
-			self.transform = CGAffineTransformMakeRotation(degrees * CGFloat(M_PI/180));
+//			var degrees: CGFloat = CGFloat(arc4random_uniform(20))
+//			degrees -= 15
+//			self.transform = CGAffineTransformMakeRotation(degrees * CGFloat(M_PI/180));
 			
 			}, completion: nil)
 	}

@@ -11,16 +11,18 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
+	@IBOutlet weak var flyingCat1LeadingConstraint: NSLayoutConstraint!
+	@IBOutlet weak var fyingCat2TrailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var pianoView: PianoView!
-	@IBOutlet weak var catView: CatsView!
 	@IBOutlet weak var drumsButton: UIButton!
-    
+
+	@IBOutlet weak var salemTralingConstraint: NSLayoutConstraint!
+
     let notePlayer = NotePlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadPianoView()
-		catView.addCats()
         notePlayer.initialiseAudioPLayers()
     }
     
@@ -34,10 +36,15 @@ class ViewController: UIViewController {
 	@IBAction func drumsButtonPressed(sender: AnyObject) {
 		if notePlayer.drumsPlaying(){
 			notePlayer.stopDrums()
-			catView.stopCatDance()
+			self.salemTralingConstraint.constant = -360
+			//	catView.stopCatDance()
 		}else{
 			notePlayer.playDrums()
-			catView.startCatDance()
+			UIView.animateWithDuration(2.5, animations: {
+				self.salemTralingConstraint.constant = 700
+				self.view.layoutIfNeeded()
+			})
+			//catView.startCatDance()
 		}
 	}
 }
