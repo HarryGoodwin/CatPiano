@@ -34,8 +34,10 @@ class ViewController: UIViewController {
 	@IBAction func drumsButtonPressed(sender: AnyObject) {
 		if notePlayer.drumsPlaying(){
 			notePlayer.stopDrums()
+			catView.stopCatDance()
 		}else{
 			notePlayer.playDrums()
+			catView.startCatDance()
 		}
 	}
 }

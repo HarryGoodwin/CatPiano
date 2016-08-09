@@ -11,6 +11,8 @@ import UIKit
 @IBDesignable
 
 class CatsView: UIView {
+	
+	var catImages:[CatImage] = []
 
 	func addCats(){
 		var xPosition: CGFloat = -30
@@ -20,9 +22,9 @@ class CatsView: UIView {
 			let imageString = "Catcordion_Cat\(randomCatIndex)_idle"
 			let image = UIImage(named: imageString)
 			let yPosition: CGFloat = bounds.size.height - (image?.size.height)! - 115
-			let imageView = UIImageView(frame: CGRect(x: xPosition, y: yPosition, width: (image?.size.width)!, height: (image?.size.height)!))
+			let imageView = CatImage(frame: CGRect(x: xPosition, y: yPosition, width: (image?.size.width)!, height: (image?.size.height)!))
 			imageView.image = image
-			imageView.addBouncing()
+			catImages.append(imageView)
 			addSubview(imageView)
 			
 			xPosition += imageView.frame.size.width
@@ -34,26 +36,21 @@ class CatsView: UIView {
 			let imageString = "Catcordion_Cat\(randomCatIndex)_idle"
 			let image = UIImage(named: imageString)
 			let yPosition: CGFloat = bounds.size.height - (image?.size.height)! - 90
-			let imageView = UIImageView(frame: CGRect(x: xPosition, y: yPosition, width: (image?.size.width)!, height: (image?.size.height)!))
+			let imageView = CatImage(frame: CGRect(x: xPosition, y: yPosition, width: (image?.size.width)!, height: (image?.size.height)!))
 			imageView.image = image
-			imageView.addBouncing()
+			catImages.append(imageView)
 			addSubview(imageView)
 			
 			xPosition += imageView.frame.size.width
 		}
 	}
-}
-
-extension UIImageView {
-	func addBouncing(){
-		UIView.animateWithDuration(0.5, delay:0, options: [.Repeat, .Autoreverse], animations: {
-			
-			self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y + 20, width: self.frame.size.width, height: self.frame.size.height)
-			
-			var degrees: CGFloat = CGFloat(arc4random_uniform(20))
-			degrees -= 15
-			self.transform = CGAffineTransformMakeRotation(degrees * CGFloat(M_PI/180));
-			
-			}, completion: nil)
+	
+	func startCatDance(){
+		catImages.forEach({$0.addBouncing()})
+	}
+	
+	func stopCatDance(){
+		catImages.forEach({$0.stopBouncing()})
 	}
 }
+

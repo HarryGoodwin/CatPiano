@@ -42,9 +42,15 @@
                                     <constraint firstAttribute="trailing" secondItem="lrh-ET-DUv" secondAttribute="trailing" constant="19" id="HRA-gU-fn9"/>
                                     <constraint firstItem="lrh-ET-DUv" firstAttribute="top" secondItem="y7l-tq-nZg" secondAttribute="top" constant="20" id="RMD-tU-UEu"/>
                                     <constraint firstItem="aYL-7y-qUK" firstAttribute="top" secondItem="y7l-tq-nZg" secondAttribute="top" id="Wws-VB-IOj"/>
+                                    <constraint firstAttribute="bottom" secondItem="aYL-7y-qUK" secondAttribute="bottom" id="XMS-oY-C70"/>
                                     <constraint firstAttribute="trailing" secondItem="aYL-7y-qUK" secondAttribute="trailing" id="rRc-Qs-HYw"/>
                                     <constraint firstAttribute="bottom" secondItem="aYL-7y-qUK" secondAttribute="bottom" id="w3m-hA-SBd"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="w3m-hA-SBd"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9s-1X-lFa" customClass="PianoView" customModule="AudioSampleTest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
@@ -56,7 +62,6 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M9s-1X-lFa" secondAttribute="bottom" id="Bx9-ck-KnS"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M9s-1X-lFa" secondAttribute="bottom" id="H21-VC-gra"/>
                             <constraint firstItem="y7l-tq-nZg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Tex-Fo-Dja"/>
-                            <constraint firstItem="M9s-1X-lFa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="cH2-G3-Ofq"/>
                             <constraint firstItem="M9s-1X-lFa" firstAttribute="top" secondItem="y7l-tq-nZg" secondAttribute="bottom" id="dvf-bJ-Aos"/>
                             <constraint firstItem="y7l-tq-nZg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="uAV-Fl-yKx"/>
                             <constraint firstItem="y7l-tq-nZg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xJf-YZ-KpY"/>
