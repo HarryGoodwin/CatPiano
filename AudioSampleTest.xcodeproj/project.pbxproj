@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A33E2C11D5A033A009C4BC6 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33E2C01D5A033A009C4BC6 /* CatImage.swift */; };
+		4AE05B551D5B4D5300079EEB /* FloatingCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE05B541D5B4D5300079EEB /* FloatingCatView.swift */; };
 		4AE9268A1D42F48000098FBE /* Medium_Meow_A#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9267F1D42F48000098FBE /* Medium_Meow_A#.mp3 */; };
 		4AE9268B1D42F48000098FBE /* Medium_Meow_B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926801D42F48000098FBE /* Medium_Meow_B.mp3 */; };
 		4AE9268C1D42F48000098FBE /* Medium_Meow_C.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE926811D42F48000098FBE /* Medium_Meow_C.mp3 */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		4A33E2C01D5A033A009C4BC6 /* CatImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatImage.swift; sourceTree = "<group>"; };
+		4AE05B541D5B4D5300079EEB /* FloatingCatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingCatView.swift; sourceTree = "<group>"; };
 		4AE9267F1D42F48000098FBE /* Medium_Meow_A#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Medium_Meow_A#.mp3"; path = "Cat_Meows/Medium_Meow_A#.mp3"; sourceTree = "<group>"; };
 		4AE926801D42F48000098FBE /* Medium_Meow_B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Medium_Meow_B.mp3; path = Cat_Meows/Medium_Meow_B.mp3; sourceTree = "<group>"; };
 		4AE926811D42F48000098FBE /* Medium_Meow_C.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Medium_Meow_C.mp3; path = Cat_Meows/Medium_Meow_C.mp3; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				673CDB0C1D41F62200561C77 /* NotePlayer.swift */,
 				673CDB0E1D41FBEE00561C77 /* Notes.swift */,
 				4A33E2C01D5A033A009C4BC6 /* CatImage.swift */,
+				4AE05B541D5B4D5300079EEB /* FloatingCatView.swift */,
 			);
 			path = AudioSampleTest;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			files = (
 				673CDAF51D3DD7A900561C77 /* ViewController.swift in Sources */,
 				673CDB0F1D41FBEE00561C77 /* Notes.swift in Sources */,
+				4AE05B551D5B4D5300079EEB /* FloatingCatView.swift in Sources */,
 				673CDB0B1D3EF38900561C77 /* PianoView.swift in Sources */,
 				673CDB0D1D41F62200561C77 /* NotePlayer.swift in Sources */,
 				673CDAF31D3DD7A900561C77 /* AppDelegate.swift in Sources */,

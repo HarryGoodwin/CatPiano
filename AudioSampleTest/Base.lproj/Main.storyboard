@@ -24,73 +24,90 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nebula-Galaxies" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-7y-qUK">
                                         <rect key="frame" x="0.0" y="0.0" width="667" height="188"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrh-ET-DUv">
-                                        <rect key="frame" x="590" y="20" width="58" height="52"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLM-8x-kEt" customClass="FloatingCatView" customModule="AudioSampleTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="94"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="flyingcat2" translatesAutoresizingMaskIntoConstraints="NO" id="bmG-Dz-8BB">
+                                                <rect key="frame" x="65" y="24" width="111" height="68"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="111" id="hS1-mz-aRm"/>
+                                                    <constraint firstAttribute="height" constant="68" id="vbu-BL-XtN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="flyingcat" translatesAutoresizingMaskIntoConstraints="NO" id="mcm-4J-jwl">
+                                                <rect key="frame" x="488" y="34" width="111" height="68"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="1BR-nv-VJU"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="3gw-dG-24O"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="111" id="gB4-OF-d0T"/>
+                                                    <constraint firstAttribute="width" constant="111" id="kvY-QB-Z9W"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="52" id="bp1-LP-3jd"/>
-                                            <constraint firstAttribute="width" constant="58" id="llc-O8-t4b"/>
+                                            <constraint firstItem="bmG-Dz-8BB" firstAttribute="top" secondItem="vLM-8x-kEt" secondAttribute="top" constant="25" id="517-uw-CVi"/>
+                                            <constraint firstAttribute="trailing" secondItem="mcm-4J-jwl" secondAttribute="trailing" constant="68" id="Wa8-cN-tNM"/>
+                                            <constraint firstItem="mcm-4J-jwl" firstAttribute="top" secondItem="vLM-8x-kEt" secondAttribute="top" constant="30" id="l7q-Oi-XOG"/>
+                                            <constraint firstItem="bmG-Dz-8BB" firstAttribute="leading" secondItem="vLM-8x-kEt" secondAttribute="leading" constant="65" id="wqT-bm-2gs"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="Bass Drum-50"/>
                                         <connections>
-                                            <action selector="drumsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uXi-EB-KBP"/>
+                                            <outlet property="floatingCat1Constraint" destination="wqT-bm-2gs" id="1cI-Dw-9ES"/>
+                                            <outlet property="floatingCat2Constraint" destination="Wa8-cN-tNM" id="yEa-W8-Kpj"/>
                                         </connections>
-                                    </button>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Avw-Do-g6x">
-                                        <rect key="frame" x="0.0" y="96" width="667" height="97"/>
+                                        <rect key="frame" x="0.0" y="47" width="667" height="193"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat1" translatesAutoresizingMaskIntoConstraints="NO" id="xH6-rL-84P" customClass="CatImage" customModule="AudioSampleTest" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="86" height="97"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="86" height="193"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat2" translatesAutoresizingMaskIntoConstraints="NO" id="pJl-a7-omc" customClass="CatImage" customModule="AudioSampleTest" customModuleProvider="target">
-                                                <rect key="frame" x="86" y="0.0" width="106" height="97"/>
+                                                <rect key="frame" x="86" y="0.0" width="106" height="193"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat3" translatesAutoresizingMaskIntoConstraints="NO" id="tEN-w1-O8O" customClass="CatImage" customModule="AudioSampleTest" customModuleProvider="target">
-                                                <rect key="frame" x="192" y="0.0" width="134" height="97"/>
+                                                <rect key="frame" x="192" y="0.0" width="134" height="193"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat 4" translatesAutoresizingMaskIntoConstraints="NO" id="N10-SG-VjN" customClass="CatImage" customModule="AudioSampleTest" customModuleProvider="target">
-                                                <rect key="frame" x="326" y="0.0" width="141" height="97"/>
+                                                <rect key="frame" x="326" y="0.0" width="141" height="193"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat6" translatesAutoresizingMaskIntoConstraints="NO" id="jem-wO-UkL" customClass="CatImage" customModule="AudioSampleTest" customModuleProvider="target">
-                                                <rect key="frame" x="467" y="0.0" width="113" height="97"/>
+                                                <rect key="frame" x="467" y="0.0" width="113" height="193"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat5" translatesAutoresizingMaskIntoConstraints="NO" id="9sv-zX-WXY" customClass="CatImage" customModule="AudioSampleTest" customModuleProvider="target">
-                                                <rect key="frame" x="580" y="0.0" width="87" height="97"/>
+                                                <rect key="frame" x="580" y="0.0" width="87" height="193"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flyingcat2" translatesAutoresizingMaskIntoConstraints="NO" id="ffl-VA-7va">
-                                        <rect key="frame" x="8" y="21" width="142" height="72"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FF3-X7-VD4">
+                                        <rect key="frame" x="5" y="29" width="46" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="142" id="fXA-D1-jQN"/>
+                                            <constraint firstAttribute="width" constant="46" id="94a-Rb-gfC"/>
+                                            <constraint firstAttribute="height" constant="30" id="mwF-Gg-zzb"/>
                                         </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flyingcat" translatesAutoresizingMaskIntoConstraints="NO" id="375-lh-oqv">
-                                        <rect key="frame" x="411" y="20" width="142" height="72"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="142" id="s45-IP-Ljw"/>
-                                            <constraint firstAttribute="width" constant="142" id="uAr-sn-8cv"/>
-                                        </constraints>
-                                    </imageView>
+                                        <state key="normal" backgroundImage="Bass Drum-50"/>
+                                        <connections>
+                                            <action selector="drumsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ep-Yr-BiA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.25490196079999999" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="vLM-8x-kEt" firstAttribute="top" secondItem="y7l-tq-nZg" secondAttribute="top" id="1a8-15-SCs"/>
                                     <constraint firstItem="aYL-7y-qUK" firstAttribute="leading" secondItem="y7l-tq-nZg" secondAttribute="leading" id="3Jg-ZF-fOf"/>
-                                    <constraint firstItem="Avw-Do-g6x" firstAttribute="top" secondItem="ffl-VA-7va" secondAttribute="bottom" constant="3" id="9wj-7k-omD"/>
-                                    <constraint firstAttribute="trailing" secondItem="lrh-ET-DUv" secondAttribute="trailing" constant="19" id="HRA-gU-fn9"/>
-                                    <constraint firstItem="lrh-ET-DUv" firstAttribute="leading" secondItem="375-lh-oqv" secondAttribute="trailing" constant="37" id="N6C-cE-KFa"/>
+                                    <constraint firstItem="vLM-8x-kEt" firstAttribute="leading" secondItem="y7l-tq-nZg" secondAttribute="leading" id="3TM-RC-aeX"/>
+                                    <constraint firstItem="Avw-Do-g6x" firstAttribute="top" secondItem="y7l-tq-nZg" secondAttribute="top" constant="47" id="865-EW-fsY"/>
+                                    <constraint firstItem="vLM-8x-kEt" firstAttribute="height" secondItem="y7l-tq-nZg" secondAttribute="height" multiplier="1:2" id="CYe-lv-bG6"/>
                                     <constraint firstItem="Avw-Do-g6x" firstAttribute="leading" secondItem="y7l-tq-nZg" secondAttribute="leading" id="NLS-yk-O0E"/>
-                                    <constraint firstItem="375-lh-oqv" firstAttribute="top" secondItem="y7l-tq-nZg" secondAttribute="top" constant="20" id="OX9-lo-pS4"/>
-                                    <constraint firstItem="lrh-ET-DUv" firstAttribute="top" secondItem="y7l-tq-nZg" secondAttribute="top" constant="20" id="RMD-tU-UEu"/>
                                     <constraint firstItem="aYL-7y-qUK" firstAttribute="top" secondItem="y7l-tq-nZg" secondAttribute="top" id="Wws-VB-IOj"/>
                                     <constraint firstAttribute="bottom" secondItem="aYL-7y-qUK" secondAttribute="bottom" id="XMS-oY-C70"/>
-                                    <constraint firstAttribute="bottom" secondItem="Avw-Do-g6x" secondAttribute="bottom" constant="-5" id="ahA-Ti-e33"/>
-                                    <constraint firstItem="Avw-Do-g6x" firstAttribute="top" secondItem="lrh-ET-DUv" secondAttribute="bottom" constant="24" id="bhz-5k-79x"/>
-                                    <constraint firstItem="Avw-Do-g6x" firstAttribute="top" secondItem="375-lh-oqv" secondAttribute="bottom" constant="4" id="i03-UQ-Cvf"/>
-                                    <constraint firstItem="ffl-VA-7va" firstAttribute="top" secondItem="y7l-tq-nZg" secondAttribute="top" constant="21" id="kjE-oh-jYV"/>
-                                    <constraint firstItem="ffl-VA-7va" firstAttribute="leading" secondItem="y7l-tq-nZg" secondAttribute="leading" constant="8" id="qGB-kI-Lnn"/>
+                                    <constraint firstAttribute="bottom" secondItem="Avw-Do-g6x" secondAttribute="bottom" constant="-52" id="ahA-Ti-e33"/>
+                                    <constraint firstItem="FF3-X7-VD4" firstAttribute="top" secondItem="y7l-tq-nZg" secondAttribute="top" constant="29" id="fWC-l9-awg"/>
+                                    <constraint firstItem="FF3-X7-VD4" firstAttribute="leading" secondItem="y7l-tq-nZg" secondAttribute="leading" constant="5" id="fiU-Vy-cVF"/>
                                     <constraint firstAttribute="trailing" secondItem="aYL-7y-qUK" secondAttribute="trailing" id="rRc-Qs-HYw"/>
                                     <constraint firstAttribute="bottom" secondItem="aYL-7y-qUK" secondAttribute="bottom" id="w3m-hA-SBd"/>
                                     <constraint firstAttribute="trailing" secondItem="Avw-Do-g6x" secondAttribute="trailing" id="y8B-WJ-KXK"/>
+                                    <constraint firstAttribute="trailing" secondItem="vLM-8x-kEt" secondAttribute="trailing" id="zmL-TB-CAo"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -133,9 +150,8 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="drumsButton" destination="lrh-ET-DUv" id="X9U-bH-AIp"/>
-                        <outlet property="flyingCat1LeadingConstraint" destination="qGB-kI-Lnn" id="b1y-b2-Nli"/>
-                        <outlet property="fyingCat2TrailingConstraint" destination="N6C-cE-KFa" id="n5K-EE-HAm"/>
+                        <outlet property="drumsButton" destination="FF3-X7-VD4" id="ycV-5q-bxp"/>
+                        <outlet property="floatingCatsView" destination="vLM-8x-kEt" id="f1u-nl-1dl"/>
                         <outlet property="pianoView" destination="M9s-1X-lFa" id="sR2-WP-h37"/>
                         <outlet property="salemTralingConstraint" destination="WBM-Iv-Pqr" id="eVv-uQ-JWL"/>
                     </connections>

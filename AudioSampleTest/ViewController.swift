@@ -11,8 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-	@IBOutlet weak var flyingCat1LeadingConstraint: NSLayoutConstraint!
-	@IBOutlet weak var fyingCat2TrailingConstraint: NSLayoutConstraint!
+	@IBOutlet weak var floatingCatsView: FloatingCatView!
     @IBOutlet weak var pianoView: PianoView!
 	@IBOutlet weak var drumsButton: UIButton!
 
@@ -24,6 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         loadPianoView()
         notePlayer.initialiseAudioPLayers()
+		floatingCatsView.animateFloatingCats()
     }
     
     func loadPianoView(){
