@@ -15,9 +15,15 @@ class FloatingCatView: UIView {
 	
 	func animateFloatingCats(){
 		UIView.animateWithDuration(30, delay: 0, options: [.Autoreverse, .Repeat], animations: {
-			self.floatingCat1Constraint?.constant = self.frame.size.width
-			self.floatingCat2Constraint?.constant = self.frame.size.width
+			self.floatingCat1Constraint?.constant = self.bounds.size.width
+			self.floatingCat2Constraint?.constant = self.bounds.size.width
 			self.layoutIfNeeded()
 			}, completion: nil)
+	}
+	
+	func resetConstraints(){
+		self.floatingCat1Constraint?.constant = 0
+		self.floatingCat2Constraint?.constant = 0
+		self.layoutIfNeeded()
 	}
 }

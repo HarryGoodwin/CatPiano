@@ -23,12 +23,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         loadPianoView()
         notePlayer.initialiseAudioPLayers()
+		floatingCatsView.animateFloatingCats()
+		
+		NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(ViewController.viewEnteredForeground), name:
+			UIApplicationWillEnterForegroundNotification, object: nil)
+		
+		NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(ViewController.viewLeavingForeground), name:
+			UIApplicationWillResignActiveNotification, object: nil)
     }
 	
-	override func viewDidAppear(animated: Bool) {
-		super.viewDidAppear(animated)
-		
+	func viewEnteredForeground(){
 		floatingCatsView.animateFloatingCats()
+	}
+	
+	func viewLeavingForeground(){
+		floatingCatsView.resetConstraints()
 	}
     
     func loadPianoView(){
@@ -42,14 +51,12 @@ class ViewController: UIViewController {
 		if notePlayer.drumsPlaying(){
 			notePlayer.stopDrums()
 			self.salemTralingConstraint.constant = -360
-			//	catView.stopCatDance()
 		}else{
 			notePlayer.playDrums()
 			UIView.animateWithDuration(2.5, animations: {
-				self.salemTralingConstraint.constant = 700
+				self.salemTralingConstraint.constant = 800
 				self.view.layoutIfNeeded()
 			})
-			//catView.startCatDance()
 		}
 	}
 }
