@@ -17,7 +17,7 @@
                BlueprintIdentifier = "673CDAEE1D3DD7A800561C77"
                BuildableName = "AudioSampleTest.app"
                BlueprintName = "AudioSampleTest"
-               ReferencedContainer = "container:AudioSampleTest.xcodeproj">
+               ReferencedContainer = "container:Meowsic.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "673CDAEE1D3DD7A800561C77"
             BuildableName = "AudioSampleTest.app"
             BlueprintName = "AudioSampleTest"
-            ReferencedContainer = "container:AudioSampleTest.xcodeproj">
+            ReferencedContainer = "container:Meowsic.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "673CDAEE1D3DD7A800561C77"
             BuildableName = "AudioSampleTest.app"
             BlueprintName = "AudioSampleTest"
-            ReferencedContainer = "container:AudioSampleTest.xcodeproj">
+            ReferencedContainer = "container:Meowsic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "673CDAEE1D3DD7A800561C77"
             BuildableName = "AudioSampleTest.app"
             BlueprintName = "AudioSampleTest"
-            ReferencedContainer = "container:AudioSampleTest.xcodeproj">
+            ReferencedContainer = "container:Meowsic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
