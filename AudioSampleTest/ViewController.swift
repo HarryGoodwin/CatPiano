@@ -50,9 +50,11 @@ class ViewController: UIViewController {
 	@IBAction func drumsButtonPressed(sender: AnyObject) {
 		if notePlayer.drumsPlaying(){
 			notePlayer.stopDrums()
+			drumsButton.setBackgroundImage(UIImage(named: "BassDrum"), forState: .Normal)
 			self.salemTralingConstraint.constant = -360
 		}else{
 			notePlayer.playDrums()
+			drumsButton.setBackgroundImage(UIImage(named: "BassDrumFilled"), forState: .Normal)
 			UIView.animateWithDuration(2.5, animations: {
 				self.salemTralingConstraint.constant = 800
 				self.view.layoutIfNeeded()

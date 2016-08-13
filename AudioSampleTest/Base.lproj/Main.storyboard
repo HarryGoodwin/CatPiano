@@ -85,7 +85,7 @@
                                             <constraint firstAttribute="width" constant="46" id="94a-Rb-gfC"/>
                                             <constraint firstAttribute="height" constant="30" id="mwF-Gg-zzb"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="Bass Drum-50"/>
+                                        <state key="normal" backgroundImage="BassDrum"/>
                                         <connections>
                                             <action selector="drumsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ep-Yr-BiA"/>
                                         </connections>
@@ -162,7 +162,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Bass Drum-50" width="25" height="25"/>
+        <image name="BassDrum" width="25" height="25"/>
         <image name="Nebula-Galaxies" width="960" height="600"/>
         <image name="Salem" width="313" height="288"/>
         <image name="cat 4" width="841" height="817"/>
