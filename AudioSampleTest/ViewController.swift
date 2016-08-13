@@ -23,8 +23,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         loadPianoView()
         notePlayer.initialiseAudioPLayers()
-		floatingCatsView.animateFloatingCats()
     }
+	
+	override func viewDidAppear(animated: Bool) {
+		super.viewDidAppear(animated)
+		
+		floatingCatsView.animateFloatingCats()
+	}
     
     func loadPianoView(){
         let xibView = NSBundle.mainBundle().loadNibNamed("PianoView", owner: self, options: nil)[0] as! PianoView
