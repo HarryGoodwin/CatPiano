@@ -16,22 +16,50 @@ class ViewController: UIViewController {
 	@IBOutlet weak var drumsButton: UIButton!
 
 	@IBOutlet weak var salemTralingConstraint: NSLayoutConstraint!
+	
+	@IBOutlet weak var firstBorderView: UIView!
+	@IBOutlet weak var secondBorderView: UIView!
+	@IBOutlet weak var thirdBorderView: UIView!
+	@IBOutlet weak var fourthBorderView: UIView!
+	@IBOutlet weak var fifthBorderView: UIView!
+	@IBOutlet weak var sixthBorderView: UIView!
 
     let notePlayer = NotePlayer()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        loadPianoView()
-        notePlayer.initialiseAudioPLayers()
+	var rainbowTimer:NSTimer?
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		loadPianoView()
+		notePlayer.initialiseAudioPLayers()
 		floatingCatsView.animateFloatingCats()
+		startRainbowAnimation()
 		
 		NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(ViewController.viewEnteredForeground), name:
 			UIApplicationWillEnterForegroundNotification, object: nil)
 		
 		NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(ViewController.viewLeavingForeground), name:
 			UIApplicationWillResignActiveNotification, object: nil)
-    }
+	}
 	
+	func startRainbowAnimation(){
+		rainbowTimer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(ViewController.cycleRainbowColours), userInfo: nil, repeats: true)
+	}
+	
+	func stopRainbowAnimation(){
+		rainbowTimer?.invalidate()
+	}
+	
+	func cycleRainbowColours()
+	{
+		let originalColour = firstBorderView.backgroundColor
+		firstBorderView.backgroundColor = secondBorderView.backgroundColor
+		secondBorderView.backgroundColor = thirdBorderView.backgroundColor
+		thirdBorderView.backgroundColor = fourthBorderView.backgroundColor
+		fourthBorderView.backgroundColor = fifthBorderView.backgroundColor
+		fifthBorderView.backgroundColor = sixthBorderView.backgroundColor
+		sixthBorderView.backgroundColor = originalColour
+	}
+    
 	func viewEnteredForeground(){
 		floatingCatsView.animateFloatingCats()
 	}

@@ -79,8 +79,8 @@
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FF3-X7-VD4">
-                                        <rect key="frame" x="5" y="9" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FF3-X7-VD4">
+                                        <rect key="frame" x="10" y="10" width="46" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="46" id="94a-Rb-gfC"/>
                                             <constraint firstAttribute="height" constant="30" id="mwF-Gg-zzb"/>
@@ -115,9 +115,97 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9s-1X-lFa" customClass="PianoView" customModule="AudioSampleTest" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9s-1X-lFa">
                                 <rect key="frame" x="0.0" y="208" width="667" height="167"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vr7-Ls-Dlv">
+                                        <rect key="frame" x="4" y="4" width="659" height="159"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-ir-L9x">
+                                                <rect key="frame" x="4" y="4" width="651" height="151"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBh-CA-ymc">
+                                                        <rect key="frame" x="4" y="4" width="643" height="143"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ene-no-iBg">
+                                                                <rect key="frame" x="4" y="4" width="635" height="135"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TkY-yc-CVG">
+                                                                        <rect key="frame" x="4" y="4" width="627" height="127"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KK7-KM-i9z" customClass="PianoView" customModule="AudioSampleTest" customModuleProvider="target">
+                                                                                <rect key="frame" x="4" y="4" width="619" height="119"/>
+                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="KK7-KM-i9z" secondAttribute="trailing" constant="4" id="AUj-d5-n4m"/>
+                                                                            <constraint firstItem="KK7-KM-i9z" firstAttribute="leading" secondItem="TkY-yc-CVG" secondAttribute="leading" constant="4" id="Bor-mv-vmd"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="KK7-KM-i9z" secondAttribute="bottom" constant="4" id="hsk-6E-9fJ"/>
+                                                                            <constraint firstItem="KK7-KM-i9z" firstAttribute="top" secondItem="TkY-yc-CVG" secondAttribute="top" constant="4" id="qxi-vv-QVQ"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="TkY-yc-CVG" firstAttribute="top" secondItem="Ene-no-iBg" secondAttribute="top" constant="4" id="1T1-AG-gOC"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="TkY-yc-CVG" secondAttribute="bottom" id="72K-gn-s4U"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="TkY-yc-CVG" secondAttribute="trailing" constant="4" id="D90-4h-yPr"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="TkY-yc-CVG" secondAttribute="bottom" constant="4" id="e4x-2c-GXt"/>
+                                                                    <constraint firstItem="TkY-yc-CVG" firstAttribute="leading" secondItem="Ene-no-iBg" secondAttribute="leading" id="jL5-gB-StK"/>
+                                                                    <constraint firstItem="TkY-yc-CVG" firstAttribute="leading" secondItem="Ene-no-iBg" secondAttribute="leading" constant="4" id="juV-Du-jqu"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="TkY-yc-CVG" secondAttribute="trailing" id="kGX-jH-L1w"/>
+                                                                    <constraint firstItem="TkY-yc-CVG" firstAttribute="top" secondItem="Ene-no-iBg" secondAttribute="top" id="xys-Oc-OER"/>
+                                                                </constraints>
+                                                                <variation key="default">
+                                                                    <mask key="constraints">
+                                                                        <exclude reference="72K-gn-s4U"/>
+                                                                        <exclude reference="jL5-gB-StK"/>
+                                                                        <exclude reference="kGX-jH-L1w"/>
+                                                                        <exclude reference="xys-Oc-OER"/>
+                                                                    </mask>
+                                                                </variation>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Ene-no-iBg" firstAttribute="top" secondItem="CBh-CA-ymc" secondAttribute="top" constant="4" id="Ct2-uS-1aK"/>
+                                                            <constraint firstItem="Ene-no-iBg" firstAttribute="leading" secondItem="CBh-CA-ymc" secondAttribute="leading" constant="4" id="Mgh-5o-do3"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Ene-no-iBg" secondAttribute="bottom" constant="4" id="WGe-Ay-F2Y"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Ene-no-iBg" secondAttribute="trailing" constant="4" id="YfD-AK-IuU"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="CBh-CA-ymc" secondAttribute="bottom" constant="4" id="2uN-9v-UV7"/>
+                                                    <constraint firstItem="CBh-CA-ymc" firstAttribute="top" secondItem="SFm-ir-L9x" secondAttribute="top" constant="4" id="8p2-G5-tMp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="CBh-CA-ymc" secondAttribute="bottom" constant="4" id="LS8-bQ-3f3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CBh-CA-ymc" secondAttribute="trailing" constant="4" id="LT8-j7-7n1"/>
+                                                    <constraint firstItem="CBh-CA-ymc" firstAttribute="leading" secondItem="SFm-ir-L9x" secondAttribute="leading" constant="4" id="Ohb-fg-c5i"/>
+                                                    <constraint firstItem="CBh-CA-ymc" firstAttribute="leading" secondItem="SFm-ir-L9x" secondAttribute="leading" constant="4" id="Yep-QB-kGX"/>
+                                                    <constraint firstItem="CBh-CA-ymc" firstAttribute="top" secondItem="SFm-ir-L9x" secondAttribute="top" constant="4" id="cEL-67-Mx9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CBh-CA-ymc" secondAttribute="trailing" constant="4" id="lFP-6e-jHt"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="SFm-ir-L9x" secondAttribute="trailing" constant="4" id="7hy-fm-2eq"/>
+                                            <constraint firstItem="SFm-ir-L9x" firstAttribute="leading" secondItem="Vr7-Ls-Dlv" secondAttribute="leading" constant="4" id="IPN-oN-6kb"/>
+                                            <constraint firstAttribute="bottom" secondItem="SFm-ir-L9x" secondAttribute="bottom" constant="4" id="NSD-Y5-FRC"/>
+                                            <constraint firstItem="SFm-ir-L9x" firstAttribute="top" secondItem="Vr7-Ls-Dlv" secondAttribute="top" constant="4" id="T2K-P7-AhA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Vr7-Ls-Dlv" firstAttribute="top" secondItem="M9s-1X-lFa" secondAttribute="top" constant="4" id="4BW-1V-Rh1"/>
+                                    <constraint firstItem="Vr7-Ls-Dlv" firstAttribute="leading" secondItem="M9s-1X-lFa" secondAttribute="leading" constant="4" id="80d-kv-Pah"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vr7-Ls-Dlv" secondAttribute="bottom" constant="4" id="TGm-8C-iBk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vr7-Ls-Dlv" secondAttribute="trailing" constant="4" id="V3B-lX-C2h"/>
+                                </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Salem" translatesAutoresizingMaskIntoConstraints="NO" id="Suz-op-Sly">
                                 <rect key="frame" x="721" y="47" width="306" height="328"/>
@@ -151,9 +239,15 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="drumsButton" destination="FF3-X7-VD4" id="ycV-5q-bxp"/>
+                        <outlet property="fifthBorderView" destination="Vr7-Ls-Dlv" id="JHF-sB-Khe"/>
+                        <outlet property="firstBorderView" destination="TkY-yc-CVG" id="GOq-dN-z1P"/>
                         <outlet property="floatingCatsView" destination="vLM-8x-kEt" id="f1u-nl-1dl"/>
-                        <outlet property="pianoView" destination="M9s-1X-lFa" id="sR2-WP-h37"/>
+                        <outlet property="fourthBorderView" destination="SFm-ir-L9x" id="wyF-YT-EC4"/>
+                        <outlet property="pianoView" destination="KK7-KM-i9z" id="NNF-1A-RFB"/>
                         <outlet property="salemTralingConstraint" destination="WBM-Iv-Pqr" id="eVv-uQ-JWL"/>
+                        <outlet property="secondBorderView" destination="Ene-no-iBg" id="svn-Kr-Z7B"/>
+                        <outlet property="sixthBorderView" destination="M9s-1X-lFa" id="cjm-oo-Myd"/>
+                        <outlet property="thirdBorderView" destination="CBh-CA-ymc" id="I0q-kl-yws"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

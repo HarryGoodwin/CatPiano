@@ -13,7 +13,13 @@ protocol PianoViewDelegate: class {
 }
 
 class PianoView: UIView {
-
+	
+	override func awakeFromNib() {
+		super.awakeFromNib()
+		
+		print(self)
+	}
+	
     var delegate: PianoViewDelegate?
 
     @IBAction func keyCPressed(sender: AnyObject) {
