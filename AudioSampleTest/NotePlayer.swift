@@ -35,7 +35,6 @@ class NotePlayer: NSObject {
             }
             
             notePLayer.play()
-            debugPrint("Playing Note \(note)")
         }
     }
 	

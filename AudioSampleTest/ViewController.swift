@@ -89,6 +89,30 @@ class ViewController: UIViewController {
 			})
 		}
 	}
+	
+	@IBAction func cat1Pressed(sender: AnyObject) {
+		print("Cat1 Pressed")
+	}
+	
+	@IBAction func cat2Pressed(sender: AnyObject) {
+		print("Cat2 Pressed")
+	}
+	
+	@IBAction func cat3Pressed(sender: AnyObject) {
+		print("Cat3 Pressed")
+	}
+	
+	@IBAction func cat4Pressed(sender: AnyObject) {
+		print("Cat4 Pressed")
+	}
+	
+	@IBAction func cat5Pressed(sender: AnyObject) {
+		print("Cat5 Pressed")
+	}
+	
+	@IBAction func cat6Pressed(sender: AnyObject) {
+		print("Cat6 Pressed")
+	}
 }
 
 extension ViewController: PianoViewDelegate{
