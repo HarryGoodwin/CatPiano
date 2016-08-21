@@ -1,28 +1,41 @@
 //
 //  CatImage.swift
-//  AudioSampleTest
+//  Meowsic
 //
-//  Created by Harry Goodwin on 09/08/2016.
+//  Created by Harry Goodwin on 18/08/2016.
 //  Copyright © 2016 Harry Goodwin. All rights reserved.
 //
 
 import UIKit
+import CoreImage
 
-class CatImage: UIImageView {
+class CatImage: UIImage {
 
-	func addBouncing(){
-		UIView.animateWithDuration(0.5, delay:0, options: [.Repeat, .Autoreverse], animations: {
+	func getEyePositions(){
+		let ciImage = UIKit.CIImage(CGImage: CGImage!)
+		
+		let options = [CIDetectorAccuracy: CIDetectorAccuracyHigh]
+		let faceDetector = CIDetector(ofType: CIDetectorTypeFace, context: nil, options: options)
+		
+		let faces = faceDetector.featuresInImage(ciImage)
+		
+		if let face = faces.first as? CIFaceFeature {
+			print("Found face at \(face.bounds)")
 			
-			self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y + 20, width: self.frame.size.width, height: self.frame.size.height)
+			if face.hasLeftEyePosition {
+				print("Found left eye at \(face.leftEyePosition)")
+			}
 			
-//			var degrees: CGFloat = CGFloat(arc4random_uniform(20))
-//			degrees -= 15
-//			self.transform = CGAffineTransformMakeRotation(degrees * CGFloat(M_PI/180));
+			if face.hasRightEyePosition {
+				print("Found right eye at \(face.rightEyePosition)")
+			}
 			
-			}, completion: nil)
-	}
-	
-	func stopBouncing(){
-		self.layer.removeAllAnimations()
+			if face.hasMouthPosition {
+				print("Found mouth at \(face.mouthPosition)")
+			}
+		}
+		else{
+			print("No Luck!!")
+		}
 	}
 }

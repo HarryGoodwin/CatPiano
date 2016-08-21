@@ -23,6 +23,8 @@ class ViewController: UIViewController {
 	@IBOutlet weak var fourthBorderView: UIView!
 	@IBOutlet weak var fifthBorderView: UIView!
 	@IBOutlet weak var sixthBorderView: UIView!
+	
+	@IBOutlet weak var catImageView1: UIImageView!
 
     let notePlayer = NotePlayer()
 	var rainbowTimer:NSTimer?
@@ -87,6 +89,36 @@ class ViewController: UIViewController {
 				self.salemTralingConstraint.constant = 800
 				self.view.layoutIfNeeded()
 			})
+			
+			detectCatFace()
+		}
+	}
+	
+	func detectCatFace(){
+		let ciImage = CIImage(CGImage: (catImageView1.image?.CGImage)!)
+		
+		let options = [CIDetectorAccuracy: CIDetectorAccuracyLow]
+		let faceDetector = CIDetector(ofType: CIDetectorTypeFace, context: nil, options: options)
+		
+		let faces = faceDetector.featuresInImage(ciImage)
+		
+		if let face = faces.first as? CIFaceFeature {
+			print("Found face at \(face.bounds)")
+			
+			if face.hasLeftEyePosition {
+				print("Found left eye at \(face.leftEyePosition)")
+			}
+			
+			if face.hasRightEyePosition {
+				print("Found right eye at \(face.rightEyePosition)")
+			}
+			
+			if face.hasMouthPosition {
+				print("Found mouth at \(face.mouthPosition)")
+			}
+		}
+		else{
+			print("No Luck!!")
 		}
 	}
 	
